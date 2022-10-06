@@ -40,4 +40,4 @@ workflows:
   say-welcome-workflow:
     jobs:
       - say-welcome:
-        requires: [say-hello]
+          requires: [say-hello]
