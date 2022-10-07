@@ -28,7 +28,7 @@ jobs:
             echo $my_name
   save-hello-world:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
     steps:
       - run:
           name: "save-hello-world"
@@ -39,7 +39,7 @@ jobs:
             - output.txt    
     print-output-file:
     docker:
-      - image: cimg/base:stable
+      - image: circleci/node:13.8.0
     steps:
       - attach_workspace:
           at: ~/  
