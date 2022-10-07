@@ -17,15 +17,6 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-  say-my-name:
-    docker:
-      - image: cimg/base:stable
-    steps:
-      - checkout
-      - run:
-          name: "say-my-name"
-          command: |
-            echo $my_name
   save-hello-world:
     docker:
       - image: circleci/node:13.8.0
