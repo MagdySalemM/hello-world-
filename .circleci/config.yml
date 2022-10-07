@@ -28,7 +28,7 @@ jobs:
           root: ~/
           paths:
             - output.txt    
-    print-output-file:
+  print-output-file:
     docker:
       - image: cimg/base:stable
     steps:
